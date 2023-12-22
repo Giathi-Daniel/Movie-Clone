@@ -1,48 +1,52 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Clone</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Boootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix</title>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav>
-        <div class="left">
-            <a href="/" class="logo"><img src="images/logo.png" alt=""></a>
-            <ul>
-                <li><a href="#" class="a_active">Home</a></li>
-                <li><a href="#">Tv Shows</a></li>
-                <li><a href="#">New & Popular</a></li>
-                <li><a href="#">My List</a></li>
-                <li><a href="#">Browse by Kanguages</a></li>
-            </ul>
+<body> 
+<!-- Navigation start  -->
+<nav>
+    <div class="left">
+        <a href="/" class="logo"><img src="logo/Netflix.png" alt=""></a>
+        <ul>
+            <li><a href="#" class="a_active">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">New & Popular</a></li>
+            <li><a href="#">My List</a></li>
+            <li><a href="#">Browse by Languages</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <!-- search  -->
+        <div class="search ">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="search...">
         </div>
-        <div class="right">
-            <!-- Search -->
-            <div class="search search_active">
-                <i class="bi bi-search"></i>
-                <input type="text" placeholder="search..">
-            </div>
-            <!-- Notification -->
-            <div class="noti">
-                <i class="bi bi-bell"></i>
-            </div>
-            <!-- Profile -->
-            <div class="profile">
-                <div class="pro_bx">
-                    <img src="images/user.jpeg" style="inline-size: 15%;">
-                    <i class="bi bi-caret-down-fill"></i>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Navigation End -->
 
-    <section>
+        <!-- noti  -->
+        <div class="noti">
+            <i class="bi bi-bell"></i>
+        </div>
+
+        <!-- profile sec  -->
+        <div class="profile">
+          <div class="pro_bx">
+            <img src="other_img/profile1.png" alt="">
+            <i class="bi bi-caret-down-fill"></i>
+          </div>
+        </div>
+
+
+    </div>
+</nav>
+<!-- Navigation end -->
+
+     <section>
         <video muted loop autoplay>
             <source src="video/money_heist.mp4" type="video/mp4" ></source>
         </video>
@@ -1003,6 +1007,198 @@
                     <div class="cate">U/A 13+</div>
                     <h6>Lorem ipsum dolor sit amet consectetur.</h6>
                 </li>
+            </div>
+
+
+            <div class="video_player">
+
+                <video id="vid" autoplay muted>
+                    <source src="video/money_heist.mp4" type="video/mp4"></source>
+                </video>
+
+
+                <div class="back_to_home">
+                    <i class="bi bi-arrow-left"></i>
+                    <i class="bi bi-flag-fill"></i>
+                </div>
+
+                <div class="controle">
+                    <div class="seekbar">
+                        <div class="seek">
+                            <input type="range" min="0" max="100">
+                            <h6 class="seek"></h6>
+                        </div>
+                        <div class="time">
+                            -5m 29s
+                        </div>
+                    </div>
+
+
+                    <div class="controller_bx">
+                        <div class="left">
+                            <i class="bi bi-play-fill"></i>
+                            <i class="bi bi-arrow-counterclockwise"><span>10</span></i>
+                            <i class="bi bi-arrow-clockwise"><span>10</span></i>
+                            <i class="bi bi-volume-up-fill"></i>
+                        </div>
+                        <div class="medium">
+                            <h6>Money Heist</h6>
+                        </div>
+                        <div class="right">
+                            <div class="next">
+                                <i class="bi bi-skip-end-fill"></i>
+                                <div class="ep">
+                                    <h1>Next Episode</h1>
+                                    <div class="card">
+                                        <div class="img_play">
+                                            <img src="other_img/jawan_poster.webp" alt="">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h2>Money Heist</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum sequi magnam deserunt deleniti impedit exercitationem delectus accusamus laudantium dolores!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layer">
+                                <i class="bi bi-stack"></i>
+
+                                <div class="show_ep">
+                                    <div class="card">
+                                        <div class="head">
+                                            <h3>Money Heist</h3>
+                                            <h6></h6>
+                                        </div>
+
+                                        <div class="bx">
+                                            <div class="img_play">
+                                                <img src="other_img/jawan_poster.webp" alt="">
+                                                <i class="bi bi-play-fill"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus adipisci aperiam suscipit dolor. Reprehenderit ipsa sit magni nisi itaque, mollitia in optio quo. In distinctio officia ea, iusto quos dolores!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="head">
+                                            <h3>Money Heist</h3>
+                                            <h6></h6>
+                                        </div>
+
+                                        <div class="bx">
+                                            <div class="img_play">
+                                                <img src="other_img/jawan_poster.webp" alt="">
+                                                <i class="bi bi-play-fill"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus adipisci aperiam suscipit dolor. Reprehenderit ipsa sit magni nisi itaque, mollitia in optio quo. In distinctio officia ea, iusto quos dolores!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="head">
+                                            <h3>Money Heist</h3>
+                                            <h6></h6>
+                                        </div>
+
+                                        <div class="bx">
+                                            <div class="img_play">
+                                                <img src="other_img/jawan_poster.webp" alt="">
+                                                <i class="bi bi-play-fill"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus adipisci aperiam suscipit dolor. Reprehenderit ipsa sit magni nisi itaque, mollitia in optio quo. In distinctio officia ea, iusto quos dolores!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="head">
+                                            <h3>Money Heist</h3>
+                                            <h6></h6>
+                                        </div>
+
+                                        <div class="bx">
+                                            <div class="img_play">
+                                                <img src="other_img/jawan_poster.webp" alt="">
+                                                <i class="bi bi-play-fill"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus adipisci aperiam suscipit dolor. Reprehenderit ipsa sit magni nisi itaque, mollitia in optio quo. In distinctio officia ea, iusto quos dolores!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="head">
+                                            <h3>Money Heist</h3>
+                                            <h6></h6>
+                                        </div>
+
+                                        <div class="bx">
+                                            <div class="img_play">
+                                                <img src="other_img/jawan_poster.webp" alt="">
+                                                <i class="bi bi-play-fill"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus adipisci aperiam suscipit dolor. Reprehenderit ipsa sit magni nisi itaque, mollitia in optio quo. In distinctio officia ea, iusto quos dolores!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="head">
+                                            <h3>Money Heist</h3>
+                                            <h6></h6>
+                                        </div>
+
+                                        <div class="bx">
+                                            <div class="img_play">
+                                                <img src="other_img/jawan_poster.webp" alt="">
+                                                <i class="bi bi-play-fill"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus adipisci aperiam suscipit dolor. Reprehenderit ipsa sit magni nisi itaque, mollitia in optio quo. In distinctio officia ea, iusto quos dolores!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="audio_subtile">
+                                <i class="bi bi-chat-left-text-fill"></i>
+                                <div class="bx">
+                                    <div class="left_bx">
+                                        <h4>Audio</h4>
+                                        <div class="list">
+                                            <li>English</li>
+                                            <li>Hindi</li>
+                                        </div>
+                                    </div>
+                                    <div class="right_bx">
+                                        <h4>Subtitle</h4>
+                                        <div class="list">
+                                            <li>English</li>
+                                            <li>Hindi</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_speed">
+                            <i class="bi bi-speedometer"></i>
+                            <div class="bx">
+                                <div class="card"><span>0.5x</span></div>
+                                <div class="card"><span>0.75x</span></div>
+                                <div class="card"><span>1x</span></div>
+                                <div class="card"><span>1.25x</span></div>
+                                <div class="card"><span>1.5x</span></div>
+                            </div>
+                        </div>
+                        <i class="bi bi-fullscreen"></i>
+                    </div>
+                </div>
+
             </div>
 
         </div>
