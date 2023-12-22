@@ -18,19 +18,151 @@ a, button{
     text-decoration: none;
     cursor: pointer;
     transition: .3s linear;
+    color: #fff;
 }
 
 /******************* Navigation *****************/
 nav {
+    position: relative;
     inline-size: 100%;
     block-size: 73px;
     padding: 0 3%;
-    border: 1px solid #eff;
+    /* border: 1px solid #eff; */
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 9999;
+}
+nav::before {
+    content: "";
+    position: absolute;
+    inline-size: 100%;
+    block-size: 100%;
+    background: rgb(0,0,0,0.05);
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    z-index: -1;
 }
 nav .left, .right{
-    
+    display: flex;
+    align-items: center;
+}
+nav .left .logo img {
+    inline-size: 120px;
+}
+nav .left ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+nav .left ul li{
+    padding: 3px 10px;
+}
+nav .left ul li a{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .15px;
+    color: rgba(255,255,255,.5);
+}
+nav .left ul li a:hover{
+    color: #fff;
+}
+nav .left ul li .a_active{
+    color: #fff;
+}
+nav .right .search{
+    display: flex;
+    align-items: center;
+    padding: 6px 10px 5px 10px;
+    /* border: 1px solid #fff; */
+    background: transparent;
+    transition: .3s linear;
+}
+nav .right .search i {
+    color: #fff;
+    margin-inline-end: 8px;
+    cursor: pointer;
+    font-size: 22px;
+}
+nav .right .search input{
+    /* inline-size: 210px; */
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s linear;
+}
+nav .right .search input::placeholder{
+    font-weight: 500;
+    color: rgb(255,255,255,.5);
+}
+nav .right .search_active input{
+    inline-size: 210px;
+}
+nav .right .search_active {
+    border: 1px solid #fff;
+}
+nav .right .noti{
+    margin: 0 20px;
+    position: relative;
+}
+nav .right .noti i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+nav .right .profile{
+    margin-left: 15px;
+}
+nav .right .profile .pro_bx{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+nav .right .profile .pro_bx i{
+    margin-left: 10px;
+    color: #fff;
+    font-size: 12px;
+    transform: .3s linear;
+}
+nav .right .profile .pro_bx img{
+    border-radius: 5px;
+}
+nav .right .profile .pro_bx:hover i{
+    transform: rotate(180deg);
+}
+
+/******************* Hero Section *****************/
+section {
+    position: relative;
+    inline-size: 100%;
+    block-size: 100vh;
+    /* overflow: hidden; */
+}
+section::before {
+    content: "";
+    position: absolute;
+    inline-size: 100%;
+    bottom: 0;
+    left: 0;
+    block-size: 100px;
+    z-index: 99;
+    background: linear-gradient(180deg, transparent, #141414);
+}
+section video{
+    position: relative;
+    inline-size: 100%;
+}
+section .desc_details {
+    position: absolute;
+    inline-size: 100%;
+    block-size: 400px;
+    z-index: 999;
+    bottom: 22%;
+    left: 4%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
 }
